@@ -1,0 +1,68 @@
+.profile {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--gray-800);
+}
+
+.profile img:nth-child(2) {
+  margin-top: -1.56rem;
+}
+
+.cover {
+  height: 72px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.userInfo {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.userInfo strong {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: bold;
+}
+
+.userInfo span {
+  font-size: 0.875rem;
+  line-height: 1.37;
+  color: var(--gray-400);
+  text-align: center;
+}
+
+.editProfile {
+  border-top: 1px solid var(--gray-600);
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+.editProfile > a {
+  text-decoration: none;
+  justify-content: center;
+  color: var(--green-500);
+  font-size: 1rem;
+  line-height: 1.18;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 2rem 2rem 2rem;
+  display: flex;
+  border: 1px solid var(--green-500);
+  border-radius: 0.5rem;
+  gap: 0.5rem;
+  font-weight: bold;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+.editProfile > a:hover {
+  background: var(--green-500);
+  color: var(--white);
+}
+
+.editProfile > a svg {
+  margin-top: -2px;
+}

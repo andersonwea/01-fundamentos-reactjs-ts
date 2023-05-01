@@ -1,0 +1,89 @@
+.container {
+  padding: 2rem 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.container > img {
+  box-shadow: none;
+  border: none;
+}
+
+.comment {
+  background: var(--gray-700);
+  padding: 1rem 1rem 1.5rem 1rem;
+  border-radius: 0.5rem;
+  flex: 1;
+}
+
+.comment > header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.commentDelete {
+  background: none;
+  border: none;
+  color: var(--white);
+  cursor: pointer;
+  transition: color 0.25s ease;
+  border-radius: 0.5rem;
+  height: max-content;
+  display: flex;
+  align-items: center;
+}
+
+.commentDelete:hover {
+  color: var(--red-500);
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.userInfo strong {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  font-weight: bold;
+}
+
+.userInfo > time {
+  font-size: 0.75rem;
+  color: var(--gray-400);
+  line-height: 1.18;
+}
+
+.userInfo > strong span {
+  color: var(--gray-400);
+}
+
+.commentLike {
+  margin-left: calc(1rem + 50px);
+  background: none;
+  color: var(--gray-400);
+  border: none;
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: color 0.25s;
+}
+
+.commentLike:hover {
+  color: var(--white);
+}
+
+.commentLike:active {
+  color: var(--green-500);
+}
+
+.commentLike svg {
+  margin-right: 0.5rem;
+}
+
+.commentLike span::before {
+  content: "\2022";
+  padding: 0 0.25rem;
+}
